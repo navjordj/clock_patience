@@ -5,7 +5,7 @@ from board import Board
 special_values = {1: "Ace", 11: "Jack", 12: "Queen", 13: "King"}
 
 num_success = 0
-n = 1000
+n = 10000
 
 for i in range(n):
     is_finished = False
@@ -27,6 +27,8 @@ for i in range(n):
                         #print(f'Låser {clock_pos}')
             else:
                 is_finished = True
+                break
+        break
     if board.all_locked() == True:
         num_success += 1
 
