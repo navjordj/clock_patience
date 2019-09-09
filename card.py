@@ -4,5 +4,5 @@ class Card:
         self.suit = suit
         self.rank = rank
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f'{self.suit} {self.rank}'
