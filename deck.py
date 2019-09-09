@@ -1,5 +1,7 @@
 from card import Card
 
+import random
+
 class Deck:
 
     def __init__(self):
@@ -15,6 +17,15 @@ class Deck:
             spades.append(Card("spade", i))
 
         self.deck = clubs + diamonds + hearts + spades
+        random.shuffle(self.deck)
+
+    def draw(self):
+        """
+            Draw random card from deck
+        """
+        random.shuffle(self.deck)
+        
+        return self.deck.pop() 
 
     def __str__(self):
         return_string = ""
