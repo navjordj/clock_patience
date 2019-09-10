@@ -10,7 +10,7 @@ class Deck:
         hearts = []
         spades = []
 
-        for i in range(13):
+        for i in range(12):
             clubs.append(Card("club", i))
             diamonds.append(Card("dimaond", i))
             hearts.append(Card("heart", i))

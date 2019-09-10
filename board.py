@@ -11,6 +11,7 @@ class Board:
 
     def add_card(self, card, pos) -> None:
         self.board[pos]['card'] = card
+        self.board[pos]['locked'] = False
 
     def all_locked(self) -> bool:
         if self.num_locked() == 12:

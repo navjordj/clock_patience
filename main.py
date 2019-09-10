@@ -1,11 +1,8 @@
 from deck import Deck
 from board import Board
 
-
-special_values = {1: "Ace", 11: "Jack", 12: "Queen", 13: "King"}
-
 num_success = 0
-n = 10000
+n = 100
 
 for i in range(n):
     is_finished = False
@@ -28,7 +25,6 @@ for i in range(n):
             else:
                 is_finished = True
                 break
-        break
     if board.all_locked() == True:
         num_success += 1
 
