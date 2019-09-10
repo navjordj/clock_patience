@@ -2,7 +2,7 @@ board = {}
 
 
 class Board:
-    
+
     def __init__(self):
         self.board = {}
 
@@ -22,7 +22,7 @@ class Board:
     def num_locked(self) -> int:
         counter = 0
         for pos in self.board:
-            if self.board[pos]["locked"] == True:
+            if self.board[pos]["locked"] is True:
                 counter += 1
         return counter
 
